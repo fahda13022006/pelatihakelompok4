@@ -24,5 +24,5 @@
 ---
 
 <p align="center">
-  <strong>KELOMPOK [NAMA KELOMPOK] - [NAMA KELAS]</strong>
+  <strong>ENGINER NIH BOSSS</strong>
 </p>
