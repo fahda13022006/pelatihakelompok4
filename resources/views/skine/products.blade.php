@@ -5,14 +5,14 @@
 @section('page-content')
     <div class="panel">
         <div class="panel-header">
-            <h3>Data Produk</h3>
+            <h3>Manajemen Data Produk SKINÉ</h3>
             <button type="button" class="button" data-open-product-modal>Tambah Produk</button>
         </div>
 
         <div class="toolbar" style="margin-bottom: 18px;">
             <div class="field" style="flex:1; min-width: 220px;">
                 <label for="productSearch">Cari produk</label>
-                <input id="productSearch" type="text" placeholder="Cari nama atau kode produk" />
+                <input id="productSearch" type="text" placeholder="🔍 Ketik nama atau kode produk SKINÉ..." />
             </div>
             <div class="field">
                 <label for="categoryFilter">Filter kategori</label>
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div style="margin-bottom: 12px; color: var(--muted); font-weight: 600;" id="productMeta">0 produk</div>
+        <div style="margin-bottom: 12px; color: var(--muted); font-weight: 600;" id="productMeta">Total: 0 produk SKINÉ</div>
 
         <div class="table-wrap">
             <table>
@@ -122,6 +122,7 @@
 
 @section('page-script')
 <script>
+    // Modul Data Produk SKINÉ - Kustomisasi Tampilan & Fitur CRUD
     const PRODUCT_STORAGE_KEY = 'skine_products_v1';
     const ORDER_STORAGE_KEY = 'skine_orders_v1';
 
@@ -205,7 +206,7 @@
             tbody.appendChild(row);
         });
 
-        document.getElementById('productMeta').textContent = `${filteredProducts.length} produk`;
+        document.getElementById('productMeta').textContent = `Total: ${filteredProducts.length} produk SKINÉ`;
     }
 
     function openProductModal() {
